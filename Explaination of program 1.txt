@@ -1,0 +1,14 @@
+Thought process for sudoku program 
+
+I have applied backtracking in program , first is our choice , whenever we see an empty in a row we place 1-9 in an empty cell
+i m going to trace puzzle by each row , when we finish the row , we are going to set a column to zero then we go till -1 and then
+go down to the next cell , can say next row
+
+So our contraints, our placements cannot break the board , for eg: 
+in pluzze we have '5' in first row so if i put '5' again in same row that means we are broking our contraint.
+
+The contraints we are placing that cannot break the board
+
+so before placing a number we need to check that for that number the places is valid or not .
+
+for validation of place , we are going to check if that exist in a particular row , particular column and in a particular subgroup .
